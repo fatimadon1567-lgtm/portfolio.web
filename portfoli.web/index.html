@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My 3D Portfolio | Student Developer</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>
+      <span class="logo-text">YourName</span>
+      <span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link active">Home</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="projects.html" class="nav-link">Projects</a></li>
+    </ul>
+    <div class="nav-toggle" id="navToggle">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ===== CANVAS (Three.js 3D Background) ===== -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span>Available for Internship</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="line1">Hi, I'm</span>
+        <span class="line2 glitch" data-text="Your Name">Your Name</span>
+        <span class="line3">Student <span class="highlight">Developer</span></span>
+      </h1>
+      <p class="hero-subtitle">
+        Passionate about <span class="type-text" id="typewriter"></span>
+      </p>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-target="10">0</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="5">0</span>
+          <span class="stat-label">Technologies</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="2">0</span>
+          <span class="stat-label">Years Coding</span>
+        </div>
+      </div>
+      <div class="hero-buttons">
+        <a href="projects.html" class="btn btn-primary">
+          <i class="fas fa-rocket"></i> View Projects
+        </a>
+        <a href="about.html" class="btn btn-secondary">
+          <i class="fas fa-user"></i> About Me
+        </a>
+      </div>
+    </div>
+
+    <!-- 3D Floating Card -->
+    <div class="hero-3d-card">
+      <div class="card-inner">
+        <div class="card-face card-front">
+          <div class="card-avatar">
+            <div class="avatar-ring"></div>
+            <div class="avatar-img">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+          </div>
+          <h3>Your Name</h3>
+          <p>CS Student</p>
+          <div class="card-skills">
+            <span>Python</span>
+            <span>JS</span>
+            <span>PHP</span>
+            <span>HTML/CSS</span>
+          </div>
+        </div>
+      </div>
+      <!-- Floating elements around card -->
+      <div class="float-icon float-1"><i class="fab fa-python"></i></div>
+      <div class="float-icon float-2"><i class="fab fa-js"></i></div>
+      <div class="float-icon float-3"><i class="fab fa-php"></i></div>
+      <div class="float-icon float-4"><i class="fab fa-html5"></i></div>
+      <div class="float-icon float-5"><i class="fab fa-css3-alt"></i></div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS PREVIEW ===== -->
+  <section class="skills-preview">
+    <div class="section-header">
+      <span class="section-tag">// TECH STACK</span>
+      <h2>Technologies I Use</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card" data-tilt>
+        <div class="skill-icon"><i class="fab fa-python"></i></div>
+        <h4>Python</h4>
+        <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+        <span class="skill-percent">80%</span>
+      </div>
+      <div class="skill-card" data-tilt>
+        <div class="skill-icon"><i class="fab fa-js"></i></div>
+        <h4>JavaScript</h4>
+        <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+        <span class="skill-percent">75%</span>
+      </div>
+      <div class="skill-card" data-tilt>
+        <div class="skill-icon"><i class="fab fa-php"></i></div>
+        <h4>PHP</h4>
+        <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+        <span class="skill-percent">65%</span>
+      </div>
+      <div class="skill-card" data-tilt>
+        <div class="skill-icon"><i class="fab fa-html5"></i></div>
+        <h4>HTML5</h4>
+        <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+        <span class="skill-percent">90%</span>
+      </div>
+      <div class="skill-card" data-tilt>
+        <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+        <h4>CSS3</h4>
+        <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        <span class="skill-percent">85%</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2026 <span class="highlight">Your Name</span>. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="js/three-bg.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

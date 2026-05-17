@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me | 3D Portfolio</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>
+      <span class="logo-text">YourName</span>
+      <span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link active">About</a></li>
+      <li><a href="projects.html" class="nav-link">Projects</a></li>
+    </ul>
+    <div class="nav-toggle" id="navToggle">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ABOUT HERO -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <span class="section-tag">// ABOUT ME</span>
+      <h1>Know <span class="highlight">Who I Am</span></h1>
+      <p>A passionate student developer building the future, one line of code at a time.</p>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about-section">
+    <div class="about-grid">
+
+      <!-- Left: Profile Card -->
+      <div class="profile-card-3d">
+        <div class="profile-card">
+          <div class="profile-glow"></div>
+          <div class="profile-avatar">
+            <i class="fas fa-user-graduate"></i>
+          </div>
+          <h2 class="profile-name">Your Full Name</h2>
+          <p class="profile-title">Computer Science Student</p>
+          <div class="profile-info">
+            <div class="info-item">
+              <i class="fas fa-university"></i>
+              <span>Your University Name</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Your City, Country</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-graduation-cap"></i>
+              <span>Year 2 / BSc Computer Science</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <span>yourname@email.com</span>
+            </div>
+          </div>
+          <div class="profile-socials">
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+          <a href="#" class="btn btn-primary" download>
+            <i class="fas fa-download"></i> Download CV
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Info -->
+      <div class="about-info">
+        <div class="about-text">
+          <h3>Hello, I'm <span class="highlight">Your Name</span></h3>
+          <p>
+            I'm a passionate Computer Science student with a love for building
+            creative and functional web applications. I enjoy turning complex
+            problems into simple, beautiful, and intuitive solutions.
+          </p>
+          <p>
+            Currently in my 2nd year, I've been exploring full-stack development,
+            data science with Python, and 3D web experiences. I'm always eager
+            to learn new technologies and collaborate on exciting projects.
+          </p>
+        </div>
+
+        <!-- Skills Bars -->
+        <div class="skills-section">
+          <h3>Technical Skills</h3>
+          <div class="skill-item">
+            <div class="skill-label">
+              <span><i class="fab fa-python"></i> Python</span>
+              <span>80%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label">
+              <span><i class="fab fa-js"></i> JavaScript</span>
+              <span>75%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label">
+              <span><i class="fab fa-php"></i> PHP</span>
+              <span>65%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label">
+              <span><i class="fab fa-html5"></i> HTML / CSS</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label">
+              <span><i class="fas fa-database"></i> MySQL</span>
+              <span>60%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+          </div>
+        </div>
+
+        <!-- Education Timeline -->
+        <div class="timeline-section">
+          <h3>Education</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2023 – Present</span>
+                <h4>BSc Computer Science</h4>
+                <p>Your University Name</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2020 – 2023</span>
+                <h4>High School Diploma</h4>
+                <p>Your High School Name</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERESTS -->
+  <section class="interests-section">
+    <div class="section-header">
+      <span class="section-tag">// INTERESTS</span>
+      <h2>What I Love</h2>
+    </div>
+    <div class="interests-grid">
+      <div class="interest-card">
+        <i class="fas fa-globe"></i>
+        <h4>Web Development</h4>
+        <p>Building responsive and interactive web experiences</p>
+      </div>
+      <div class="interest-card">
+        <i class="fas fa-brain"></i>
+        <h4>AI & Machine Learning</h4>
+        <p>Exploring intelligent systems with Python</p>
+      </div>
+      <div class="interest-card">
+        <i class="fas fa-cube"></i>
+        <h4>3D Graphics</h4>
+        <p>Creating immersive 3D experiences on the web</p>
+      </div>
+      <div class="interest-card">
+        <i class="fas fa-shield-alt"></i>
+        <h4>Cybersecurity</h4>
+        <p>Learning about secure coding and ethical hacking</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2026 <span class="highlight">Your Name</span>. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="js/three-bg.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects & Contact | 3D Portfolio</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>
+      <span class="logo-text">YourName</span>
+      <span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="projects.html" class="nav-link active">Projects</a></li>
+    </ul>
+    <div class="nav-toggle" id="navToggle">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <span class="section-tag">// MY WORK</span>
+      <h1>Projects & <span class="highlight">Contact</span></h1>
+      <p>Things I've built and ways to reach me.</p>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section class="projects-section">
+    <div class="section-header">
+      <span class="section-tag">// PROJECTS</span>
+      <h2>What I've Built</h2>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <button class="filter-btn" data-filter="python">Python</button>
+      <button class="filter-btn" data-filter="php">PHP</button>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+
+      <div class="project-card" data-category="web">
+        <div class="project-card-inner">
+          <div class="project-img">
+            <div class="project-placeholder">
+              <i class="fas fa-globe"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+            <h3>Personal Blog Website</h3>
+            <p>A responsive blog platform with dark mode, search functionality, and dynamic content loading.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="python">
+        <div class="project-card-inner">
+          <div class="project-img">
+            <div class="project-placeholder">
+              <i class="fab fa-python"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span>Python</span><span>Flask</span><span>ML</span>
+            </div>
+            <h3>Student Grade Predictor</h3>
+            <p>A machine learning model that predicts student grades based on study habits and attendance data.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="php">
+        <div class="project-card-inner">
+          <div class="project-img">
+            <div class="project-placeholder">
+              <i class="fab fa-php"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span>PHP</span><span>MySQL</span><span>Bootstrap</span>
+            </div>
+            <h3>Student Management System</h3>
+            <p>A full CRUD web app for managing student records, grades, and attendance with admin dashboard.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="web python">
+        <div class="project-card-inner">
+          <div class="project-img">
+            <div class="project-placeholder">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span>Python</span><span>JS</span><span>Chart.js</span>
+            </div>
+            <h3>Data Dashboard</h3>
+            <p>Interactive data visualization dashboard powered by Python backend and Chart.js frontend.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="web">
+        <div class="project-card-inner">
+          <div class="project-img">
+            <div class="project-placeholder">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+            <h3>E-Commerce UI</h3>
+            <p>A modern e-commerce front-end with product filtering, cart functionality, and smooth animations.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="python">
+        <div class="project-card-inner">
+          <div class="project-img">
+            <div class="project-placeholder">
+              <i class="fas fa-robot"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span>Python</span><span>NLP</span><span>API</span>
+            </div>
+            <h3>Chatbot Assistant</h3>
+            <p>A simple AI chatbot built with Python and NLP libraries that answers FAQs for a university portal.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section" id="contact">
+    <div class="section-header">
+      <span class="section-tag">// CONTACT</span>
+      <h2>Get In Touch</h2>
+    </div>
+    <div class="contact-grid">
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h3>Let's <span class="highlight">Connect</span></h3>
+        <p>Whether you have a project idea, want to collaborate, or just want to say hi — my inbox is always open.</p>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <span>Email</span>
+              <a href="mailto:yourname@email.com">yourname@email.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <span>Location</span>
+              <p>Your City, Country</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div>
+              <span>GitHub</span>
+              <a href="#">github.com/yourusername</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form (PHP powered) -->
+      <div class="contact-form-wrapper">
+        <form class="contact-form" id="contactForm" action="php/contact.php" method="POST">
+          <div id="form-message" class="form-message" style="display:none;"></div>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required autocomplete="name"/>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required autocomplete="email"/>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Project Collaboration" required/>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2026 <span class="highlight">Your Name</span>. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="js/three-bg.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/projects.js"></script>
+</body>
+</html>
